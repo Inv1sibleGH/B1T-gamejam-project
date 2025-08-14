@@ -1,17 +1,7 @@
-move_x = keyboard_check(vk_right) - keyboard_check(vk_left);
-move_x *= move_speed;
-
-if(y > room_height) y = 1;
-if(x > room_width) x = 1;
-else if( x < 0) x = room_width - 1;
-
-if (place_meeting(x, y+2, Flower))
-{
-	move_y = 0;
-	if (keyboard_check(vk_space)) move_y = -jump_speed;
+dir = point_direction(x, y, mouse_x, mouse_y);
+var dist = point_distance(x, y, mouse_x, mouse_y);
+var speed_now = clamp(dist / 10, min_speed, max_speed);
+if(dist>1){
+	x += lengthdir_x(speed_now, dir);
+	y += lengthdir_y(speed_now, dir);
 }
-else if (move_y < 10) move_y += 1;
-
-move_and_collide(move_x, move_y, Flower);
-
-//if (move_x != 0) image_xscale = sign(move_x);
