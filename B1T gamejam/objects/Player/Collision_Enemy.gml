@@ -1,2 +1,2 @@
-/*if(place_meeting(x, y+2, Ground) sprite_index = Sprite4;
-else */
+if(!place_meeting(x, y, Enemy)) sprite_index = Sprite3; 
+sprite_index = Sprite4;
