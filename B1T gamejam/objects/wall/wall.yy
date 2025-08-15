@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Player",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"wall",
+  "eventList":[],
   "managed":true,
-  "name":"Player",
+  "name":"wall",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bee",
-    "path":"sprites/spr_bee/spr_bee.yy",
+    "name":"Sprite12",
+    "path":"sprites/Sprite12/Sprite12.yy",
   },
   "spriteMaskId":null,
   "visible":true,

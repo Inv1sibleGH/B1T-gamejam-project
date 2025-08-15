@@ -18,24 +18,35 @@ if (current_speed < target_speed) {
 }
 
 //move without jitter at the end
-if(dist>stop_radius){
-	var move_step = min(current_speed, max(0, dist - stop_radius));
-	x += lengthdir_x(move_step, dir);
-	y += lengthdir_y(move_step, dir);
+if (dist > stop_radius) {
+    var step = min(current_speed, max(0, dist - stop_radius));
+    var dx = lengthdir_x(step, dir);
+    var dy = lengthdir_y(step, dir);
+
+    var sx = sign(dx), sy = sign(dy);          // -1,0,1
+    var px = abs(round(dx)), py = abs(round(dy)); // pixels to move on each axis
+
+    // move along the larger axis first, then the other
+    if (px >= py) {
+        repeat (px) { if (!place_meeting(x + sx, y, wall)) x += sx; else break; }
+        repeat (py) { if (!place_meeting(x, y + sy, wall)) y += sy; else break; }
+    } else {
+        repeat (py) { if (!place_meeting(x, y + sy, wall)) y += sy; else break; }
+        repeat (px) { if (!place_meeting(x + sx, y, wall)) x += sx; else break; }
+    }
 } else {
     current_speed = 0;
 }
 
-// Flip bee to face cursor
-if (mouse_x > x) {
-    image_xscale = -1; // face left
-	left_right_fix = 10;
-} else {
-    image_xscale = 1;  // face right
-	left_right_fix = -10;
-}
+// --- face left/right visually ---
+vis_xscale = (mouse_x < x) ? 1 : -1;
 
-var facing_base = (image_xscale == 1) ? 0 : 180;
-var local_angle = angle_difference(dir, facing_base);
-var tilt        = clamp(local_angle, -tilt_limit, tilt_limit);
-image_angle     = lerp(image_angle, tilt, tilt_smooth) + left_right_fix;
+// --- clamp tilt toward the cursor, ±tilt_limit ---
+var facing_base = (vis_xscale == 1) ? 0 : 180;
+var local = angle_difference(dir, facing_base);
+var tilt  = clamp(local, -tilt_limit, tilt_limit);
+vis_angle = lerp(vis_angle, -tilt, tilt_smooth);
+
+// IMPORTANT: keep collision mask unrotated/unflipped
+image_xscale = 1;
+image_angle  = 0;
