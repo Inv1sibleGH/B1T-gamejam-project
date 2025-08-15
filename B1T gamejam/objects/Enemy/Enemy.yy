@@ -3,6 +3,7 @@
   "%Name":"Enemy",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Enemy",
@@ -30,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite5",
-    "path":"sprites/Sprite5/Sprite5.yy",
+    "name":"spr_hornet",
+    "path":"sprites/spr_hornet/spr_hornet.yy",
   },
   "spriteMaskId":null,
   "visible":true,

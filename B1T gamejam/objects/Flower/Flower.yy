@@ -3,6 +3,9 @@
   "%Name":"Flower",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Player","path":"objects/Player/Player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Flower",
@@ -25,13 +28,15 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"starting_sprite","filters":[],"listItems":[],"multiselect":false,"name":"starting_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":1,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite3",
-    "path":"sprites/Sprite3/Sprite3.yy",
+    "name":"spr_flower_open",
+    "path":"sprites/spr_flower_open/spr_flower_open.yy",
   },
   "spriteMaskId":null,
   "visible":true,
