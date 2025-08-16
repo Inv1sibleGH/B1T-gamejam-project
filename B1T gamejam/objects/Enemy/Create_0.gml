@@ -1,11 +1,7 @@
+event_inherited();
 min_speed = 0;  
 max_speed = 4;
-dir = 0;
+dir = 1;
 
-current_speed = 0;
-accel = 1.0;
-stop_radius = 2;
+//dir_x & dir_y are bools that check if the hornet is allowed to move up/down or left/right
 
-tilt_limit  = 30;   
-tilt_smooth = 0.25;
-left_right_fix = -15;

@@ -1,3 +1,4 @@
+event_inherited();
 min_speed = 0;  
 max_speed = 30;
 dir = 0;
@@ -12,7 +13,7 @@ left_right_fix = -15;
 
 // Keep collisions stable
 mask_index   = spr_bee;   // a simple circle/box mask
-image_xscale = 1;
+//image_xscale = 1;
 image_angle  = 0;
 
 // Visual-only transforms
