@@ -1,5 +1,5 @@
 // Inherit the parent event
 event_inherited();
 
-sprite_index = spr_levels_button;
+sprite_index = spr_credits_button;
 

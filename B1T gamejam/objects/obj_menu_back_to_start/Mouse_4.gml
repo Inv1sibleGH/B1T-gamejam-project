@@ -1,3 +1,3 @@
 // Inherit the parent event
 event_inherited();
-room_goto(room_credits);
+room_goto(room_start_menu);

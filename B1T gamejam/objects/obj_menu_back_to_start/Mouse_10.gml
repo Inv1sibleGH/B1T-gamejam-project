@@ -1,3 +1,4 @@
 // Inherit the parent event
 event_inherited();
-room_goto(room_credits);
+
+sprite_index = spr_back_to_start_inverse;

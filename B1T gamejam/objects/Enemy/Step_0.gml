@@ -13,5 +13,3 @@ if(y > room_height || y < 0){						//usually sign() would be the same for both x
 }
 x -= max_speed * dir * dir_x; 
 y += max_speed * dir * dir_y;
-
-show_debug_message(dir);

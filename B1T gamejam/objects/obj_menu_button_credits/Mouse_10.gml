@@ -1,4 +1,4 @@
 // Inherit the parent event
 event_inherited();
 
-sprite_index = spr_levels_inverse;
+sprite_index = spr_credits_inverse;
