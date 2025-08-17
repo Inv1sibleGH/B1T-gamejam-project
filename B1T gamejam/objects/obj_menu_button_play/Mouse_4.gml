@@ -1,3 +1,3 @@
 // Inherit the parent event
 event_inherited();
-room_goto(LVL1);
+room_goto_next();

@@ -1,3 +1,22 @@
+
+// --- face left/right visually ---
+vis_xscale = (mouse_x < x) ? 1 : -1;
+
+// --- clamp tilt toward the cursor, ±tilt_limit ---
+var facing_base = (vis_xscale == 1) ? 0 : 180;
+var local = angle_difference(dir, facing_base);
+var tilt  = clamp(local, -tilt_limit, tilt_limit);
+vis_angle = lerp(vis_angle, -tilt, tilt_smooth);
+
+// IMPORTANT: keep collision mask unrotated/unflipped
+image_xscale = 1;
+image_angle  = 0;
+
+
+if(mouse_locked){
+	window_mouse_set(firstx,firsty); exit;
+}
+
 dir = point_direction(x, y, mouse_x, mouse_y);
 var dist = point_distance(x, y, mouse_x, mouse_y);
 
@@ -37,16 +56,3 @@ if (dist > stop_radius) {
 } else {
     current_speed = 0;
 }
-
-// --- face left/right visually ---
-vis_xscale = (mouse_x < x) ? 1 : -1;
-
-// --- clamp tilt toward the cursor, ±tilt_limit ---
-var facing_base = (vis_xscale == 1) ? 0 : 180;
-var local = angle_difference(dir, facing_base);
-var tilt  = clamp(local, -tilt_limit, tilt_limit);
-vis_angle = lerp(vis_angle, -tilt, tilt_smooth);
-
-// IMPORTANT: keep collision mask unrotated/unflipped
-image_xscale = 1;
-image_angle  = 0;
