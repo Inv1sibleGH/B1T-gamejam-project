@@ -1,3 +1,3 @@
 function int_max(){
-	return 9223372036854775807;
+	return 4294967296;
 }
