@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"venusflytrapattack",
-    "path":"sprites/venusflytrapattack/venusflytrapattack.yy",
+    "name":"venusflytrapidle",
+    "path":"sprites/venusflytrapidle/venusflytrapidle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
