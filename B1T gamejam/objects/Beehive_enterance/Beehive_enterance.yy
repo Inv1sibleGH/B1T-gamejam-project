@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_invisible_enterence",
-    "path":"sprites/spr_invisible_enterence/spr_invisible_enterence.yy",
+    "name":"spr_invisible_enterance",
+    "path":"sprites/spr_invisible_enterance/spr_invisible_enterance.yy",
   },
   "spriteMaskId":null,
   "visible":false,
