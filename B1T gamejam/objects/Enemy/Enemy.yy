@@ -13,8 +13,8 @@
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"sprite_size_control",
-    "path":"objects/sprite_size_control/sprite_size_control.yy",
+    "name":"AllEnemies",
+    "path":"objects/AllEnemies/AllEnemies.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

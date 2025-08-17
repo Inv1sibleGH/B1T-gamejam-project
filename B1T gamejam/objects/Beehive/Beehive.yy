@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"wall",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Beehive",
+  "eventList":[],
   "managed":true,
-  "name":"wall",
+  "name":"Beehive",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bush",
-    "path":"sprites/spr_bush/spr_bush.yy",
+    "name":"spr_beehive",
+    "path":"sprites/spr_beehive/spr_beehive.yy",
   },
   "spriteMaskId":null,
   "visible":true,
