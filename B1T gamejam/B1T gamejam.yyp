@@ -70,6 +70,8 @@
     {"id":{"name":"LVL5","path":"rooms/LVL5/LVL5.yy",},},
     {"id":{"name":"LVL6","path":"rooms/LVL6/LVL6.yy",},},
     {"id":{"name":"LVL9","path":"rooms/LVL9/LVL9.yy",},},
+    {"id":{"name":"LVL7","path":"rooms/LVL7/LVL7.yy",},},
+    {"id":{"name":"LVL8","path":"rooms/LVL8/LVL8.yy",},},
     {"id":{"name":"room_credits","path":"rooms/room_credits/room_credits.yy",},},
     {"id":{"name":"room_ending","path":"rooms/room_ending/room_ending.yy",},},
     {"id":{"name":"room_level_menu","path":"rooms/room_level_menu/room_level_menu.yy",},},
@@ -121,6 +123,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"room_start_menu","path":"rooms/room_start_menu/room_start_menu.yy",},},
+    {"roomId":{"name":"LVL8","path":"rooms/LVL8/LVL8.yy",},},
+    {"roomId":{"name":"LVL7","path":"rooms/LVL7/LVL7.yy",},},
     {"roomId":{"name":"LVL4","path":"rooms/LVL4/LVL4.yy",},},
     {"roomId":{"name":"room_ending","path":"rooms/room_ending/room_ending.yy",},},
     {"roomId":{"name":"LVL45","path":"rooms/LVL45/LVL45.yy",},},
