@@ -1,4 +1,3 @@
-event_inherited();
 dead = false;
 if(starting_sprite) sprite_index = spr_flower_open;
 else sprite_index = spr_flower_closed;

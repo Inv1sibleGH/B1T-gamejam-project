@@ -1,4 +1,3 @@
-event_inherited();
 switch(sprinkler_range){
 	case 1:
 		sprite_index = fullsprinkleranim;
